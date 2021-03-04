@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/ver.js"></script>
     <title>포트폴리오</title>
 </head>
 
@@ -13,35 +16,35 @@
         <header id="header">
             <h1><strong>웹</strong>포트폴리오</h1>
         </header>
-        <nav>
+        <nav id="nav">
             <ul>
-                <li><a href="">menu1</a></li>
-                <li><a href="">menu2</a></li>
-                <li><a href="">menu3</a></li>
-                <li><a href="">menu4</a></li>
+                <li><a href="">자기소개</a></li>
+                <li><a href="">퍼블리싱</a></li>
+                <li><a href="">디자인</a></li>
+                <li><a href="">연락처</a></li>
             </ul>
         </nav>
-        <div id="container">
-            <section id="introduce" class="section">자기소개
+        <section id="container">
+            <div id="introduce" class="section">자기소개
                 <div id="introWrap">
                     <div id="paperBagHead" class="paperAnim">봉투머리</div>
                     <div id="paperBagBody" class="paperAnim">봉투몸통</div>
                     <div id="paper" class="paperAnim">
-                        <img src="" alt="얼굴사진">
+                        <img src="" alt="얼굴">
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid reiciendis maxime natus
                             explicabo, architecto facere, sint ad dolorem officiis ipsum atque esse tenetur tempore
                             voluptatibus, ab hic consequuntur iste corporis.</h4>
                     </div>
                 </div>
-            </section>
-            <section id="myProject" class="section">작업물
+            </div>
+            <div id="myProject" class="section">작업물
                 <div id="myPWrap">
                     <div id="purblising">
                         <div id="stikerMemo">
                             <h4>퍼블리싱</h4>
                         </div>
                         <div class="photoFrame">
-                            <img src="" alt="작업물 사진">
+                            <img src="" alt="작업물">
                             <h4>작업물 소개</h4>
                         </div>
                     </div>
@@ -50,13 +53,13 @@
                             <h4>디자인</h4>
                         </div>
                         <div class="photoFrame">
-                            <img src="" alt="작업물 사진">
+                            <img src="" alt="작업물">
                             <h4>작업물 소개</h4>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <footer id="footer">연락처</footer>
     </div>
 </body>
