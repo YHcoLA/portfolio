@@ -4,7 +4,7 @@ h2 {
     font-size: 100%;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -62,27 +62,168 @@ body,
     font-size: 6vw;
 }
 
-#header h1 strong{
+#header h1 strong {
     font-size: 10vw;
 }
 
-#nav{
+#nav {
     position: fixed;
-    top: 0;
+    top: -55vh;
     right: 10vw;
-    width: 15vw;
-    height: 75vh;
+    width: 250px;
+    height: 600px;
     background: rgb(94, 72, 40);
     color: wheat;
     font-size: 2vw;
+    z-index: 99;
+    transition: all 0.8s;
 }
 
-#nav ul{
+#nav:hover {
+    top: 0;
+}
+
+#nav ul {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
-#nav ul li{
+#nav ul li {
     margin-top: 2vw;
+}
+
+#container,
+#paperBagHead,
+#paperBagBody,
+.stikerMemo,
+.photoFrame {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#container {
+    background-image: url("../images/backgroundWoodPattern.jpg");
+    background-attachment: fixed;
+}
+
+#introduce {
+    position: relative;
+    height: 200vh;
+}
+
+#introWrap {
+    margin: 0 auto;
+}
+
+#paperBagHead {
+    position: absolute;
+    top: 10vh;
+    left: 50vw;
+    background-image: url("../images/paperBag1.png");
+    width: 800px;
+    height: 900px;
+    z-index: 80;
+}
+
+#paper {
+    position: absolute;
+    top : 30vh;
+    left: 50vw;
+    width: 450px;
+    height: 700px;
+    background: white;
+    z-index: 81;
+}
+
+#paperBagBody {
+    position: absolute;
+    top: 75px;
+    left: 50vw;
+    width: 800px;
+    height: 900px;
+    background-image: url("../images/paperBag2.png");
+    z-index: 82;
+}
+
+#paperBagHead,
+#paper,
+#paperBagBody {
+    transform: translateX(-50%);
+}
+
+#myProject {
+    width: 100%;
+}
+
+#myPWrap {
+    height: 500vh;
+    margin: 0 auto;
+    padding: 20vh 0;
+    background: url("../images/pin-board.jpg") repeat-y center;
+}
+
+#purblising,
+#design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stikerMemo {
+    position: relative;
+    background-image: url("../images/note-147951_640.png");
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+}
+
+.stikerMemo h4 {
+    font-size: 50px;
+    line-height: 175px;
+}
+
+.photoFrame {
+    position: relative;
+    background-image: url("../images/photoFrame01.png");
+    background-size: cover;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+}
+
+.photoFrame img {
+    width: 30vw;
+    height: 45vh;
+    background-color: #fff;
+}
+
+.photoFrame h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 125px;
+}
+
+.photoFrame:nth-child(odd) {
+    background-image: url("../images/photoFrame02.png");
+    right: 20vw;
+}
+
+.photoFrame:nth-child(even) {
+    background-image: url("../images/photoFrame03.png");
+    left: 20vw;
+}
+
+#footer{
+    width: 100%;
+    height: 100vh;
+}
+
+#email {
+    width: 800px;
+    height: 400px;
+    background: #fff;
+    margin: 20vh auto;
 }
