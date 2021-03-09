@@ -16,6 +16,7 @@ $(document).ready(function () {
             $('#nav').addClass('down');
         }
     });
+    
     $('#nav').on({
         'mouseenter': function () {
             $('#nav').addClass('down');
