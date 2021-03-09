@@ -80,6 +80,7 @@ body,
     font-size: 2vw;
     z-index: 99;
     transition: all 0.8s;
+    overflow: hidden;
 }
 
 /* #nav:hover {
@@ -208,16 +209,27 @@ body,
     text-align: center;
 }
 
-.photoFrame img {
+.photoFrame a{
+    position: absolute;
+    display: block;
+    top: 32px;
+    left: 40px;
+    width: 275px;
+    height: 280px;
+    background-color: lavender;
+    overflow: hidden;
+}
+
+.photoFrame a img {
     width: 30vw;
-    height: 45vh;
     background-color: #fef3e9;
 }
 
 .photoFrame h4 {
     position: absolute;
     bottom: 20px;
-    left: 125px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .photoFrame:nth-child(odd) {

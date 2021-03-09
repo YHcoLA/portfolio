@@ -1,10 +1,10 @@
 $(document).ready(function () {
     var scrollY;
 
-    setTimeout(function () {
+    /* setTimeout(function () {
         $('#header h1').addClass('fade');
         $('#nav').addClass('down');
-    }, 1500);
+    }, 1500); */
 
     $(window).on('scroll', function () {
         scrollY = $(window).scrollTop() + $(window).height();
@@ -16,7 +16,7 @@ $(document).ready(function () {
             $('#nav').addClass('down');
         }
     });
-    
+
     $('#nav').on({
         'mouseenter': function () {
             $('#nav').addClass('down');
