@@ -172,7 +172,7 @@ body,
     height: 500vh;
     margin: 0 auto;
     padding: 20vh 0;
-    background: url("../images/pin-board.jpg") repeat-y center;
+    background: url("../images/pin-board.jpg") repeat center;
     box-sizing: border-box;
     /* border: 10px solid #fff; */
     border: 20px solid transparent;
