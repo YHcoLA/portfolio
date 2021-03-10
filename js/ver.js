@@ -16,7 +16,7 @@ $(document).ready(function () {
             $('#nav').addClass('down');
         }
     });
-    
+
     $('#nav').on({
         'mouseenter': function () {
             $('#nav').addClass('down');
@@ -25,6 +25,21 @@ $(document).ready(function () {
             if (scrollY > $('#container').offset().top) {
                 $('#nav').removeClass('down');
             }
+        }
+    });
+
+    // 
+    $('#introWrapBefore .paper').addClass('updown');
+    $('#introWrapBefore .paper').draggable({
+        containment: '#introduce',
+        axis: 'y',
+        scroll: false,
+        snap: true,
+        drag: function (event, ui) {
+            $(this).removeClass('updown');
+        },
+        stop: function (event, ui) {
+            $(this).closest('.intro_wrap').stop().fadeOut().next().stop().fadeIn();
         }
     });
 });

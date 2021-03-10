@@ -117,50 +117,70 @@ body,
     height: 200vh;
 }
 
-#introWrap {
-    margin: 0 auto;
-}
-
-#paperBagHead {
+.intro_wrap {
     position: absolute;
-    top: 10vh;
-    left: 50vw;
-    background-image: url("../images/paperBag1.png");
-    width: 800px;
-    height: 900px;
-    z-index: 80;
-}
-
-#paper {
-    position: absolute;
+    width: 474px;
+    height: 850px;
     top: 30vh;
     left: 50vw;
-    width: 410px;
+    margin-left: -10%;
+}
+
+.intro_wrap>div {
+    position: absolute;
+}
+
+.back {
+    top: 0;
+    left: 0;
+}
+
+.paper {
+    top: 100px;
+    left: 17px;
+    width: 400px;
     height: 660px;
     padding: 20px;
     background: #eeeeee;
-    z-index: 81;
 }
 
-#paper img{
+.paper img {
     width: 150px;
     height: 150px;
 }
 
-#paperBagBody {
-    position: absolute;
-    top: 75px;
-    left: 50vw;
-    width: 800px;
-    height: 900px;
-    background-image: url("../images/paperBag2.png");
-    z-index: 82;
+.paper.updown {
+    animation: updown 1s ease-in infinite alternate;
 }
 
-#paperBagHead,
-#paper,
-#paperBagBody {
-    transform: translateX(-50%);
+.front {
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+#introWrapAfter {
+    display: none;
+    transform: rotate(33deg) translate(-470px, 200px);
+}
+
+#introWrapAfter .paper {
+    left: 500px;
+    top: -260px;
+    transform: rotate(-26deg);
 }
 
 #myProject {
@@ -209,7 +229,7 @@ body,
     text-align: center;
 }
 
-.photoFrame a{
+.photoFrame a {
     position: absolute;
     display: block;
     top: 32px;
@@ -252,6 +272,9 @@ body,
     height: 400px;
     background: #f7e4dd;
     margin: 20vh auto;
+    text-align: center;
+    line-height: 400px;
+    font-size: 80px;
 }
 
 #header h1.fade {
@@ -259,6 +282,6 @@ body,
     opacity: 1;
 }
 
-#nav.down{
+#nav.down {
     top: 0;
 }
