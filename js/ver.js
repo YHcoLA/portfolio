@@ -8,7 +8,7 @@ $(document).ready(function () {
         $('#header h1').addClass('fade');
         $('#nav').addClass('down');
     }, 1500);
-    
+
     $(window).on('scroll', function () {
         scrollY = $(window).scrollTop() + $(window).height();
 
@@ -18,6 +18,14 @@ $(document).ready(function () {
         } else {
             $('#nav').addClass('down');
         }
+
+        $('.photoFrame').each(function(idx){
+            if(scrollY > $('.photoFrame').eq(idx).offset().top){
+                $('.photoFrame').eq(idx).addClass('fade')
+            }else{
+                $('.photoFrame').eq(idx).removeClass('fade')
+            }
+        });
     });
 
     $('#nav').on({
@@ -31,7 +39,24 @@ $(document).ready(function () {
         }
     });
 
-    
+    $('#nav ul li a').on('click',function(){
+        if($('html, body').is(':animated')){
+            return false;
+        }
+
+        if($(this).is('#intro')){
+            $('html, body').stop().animate({scrollTop : $('#introduce').offset().top});
+        }else if($(this).is('#per')){
+            $('html, body').stop().animate({scrollTop : $('#purblising').offset().top});
+        }else if($(this).is('#des')){
+            $('html, body').stop().animate({scrollTop : $('#design').offset().top});
+        }else if($(this).is('#pho')){
+            $('html, body').stop().animate({scrollTop : $('#footer').offset().top});
+        }
+        
+        return false;
+    });
+
     $('#introWrapBefore .paper').addClass('updown');
     $('#introWrapBefore .paper').draggable({
         containment: '#introduce',

@@ -14,6 +14,7 @@ a:hover,
 a:active {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 img {
@@ -39,6 +40,7 @@ body,
 #wrap {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 #header {
@@ -55,7 +57,7 @@ body,
     left: 5vw;
     color: #fcf1e7;
     font-size: 6vw;
-    transform: translate(-1000px, 0);
+    transform: translate(-52.0833vw, 0);
     opacity: 0;
     transition: all 1.2s;
 }
@@ -66,10 +68,10 @@ body,
 
 #nav {
     position: fixed;
-    top: -500px;
+    top: -34.7222vw;
     right: 10vw;
-    width: 250px;
-    height: 600px;
+    width: 17.3611vw;
+    height: 41.6667vw;
     background: rgb(94, 72, 40);
     color: #fcf1e7;
     font-size: 2vw;
@@ -110,8 +112,8 @@ body,
 
 .intro_wrap {
     position: absolute;
-    width: 474px;
-    height: 850px;
+    width: 32.9167vw;
+    height: 59.0278vw;
     top: 30vh;
     left: 50vw;
     margin-left: -10%;
@@ -121,23 +123,33 @@ body,
     position: absolute;
 }
 
+.front img{
+    width: 32.7778vw;
+    height: 40.4583vw;
+}
+
+.back img{
+    width: 32.7778vw;
+    height: 40.4583vw;
+}
+
 .back {
-    top: 0;
+    top: 10.5vw;
     left: 0;
 }
 
 .paper {
-    top: 100px;
-    left: 17px;
-    width: 400px;
-    height: 660px;
-    padding: 20px;
+    top: 6.9444vw;
+    left: 1.1806vw;
+    width: 27.7778vw;
+    height: 45.8333vw;
+    padding: 1.3889vw;
     background: #eeeeee;
 }
 
 .paper img {
-    width: 150px;
-    height: 150px;
+    width: 10.4167vw;
+    height: 10.4167vw;
 }
 
 .paper.updown {
@@ -151,27 +163,28 @@ body,
 
 @keyframes updown {
     0% {
-        transform: translateY(10px);
+        transform: translateY(0.6944vw);
     }
 
     50% {
-        transform: translateY(0px);
+        transform: translateY(0.0000vw);
     }
 
     100% {
-        transform: translateY(-10px);
+        transform: translateY(-0.6944vw);
     }
 }
 
 #introWrapAfter {
     display: none;
-    transform: rotate(33deg) translate(-470px, 200px);
+    transform: rotate(33deg) translate(-24.4792vw, 10.4167vw);
 }
 
 #introWrapAfter .paper {
-    left: 500px;
-    top: -260px;
+    left: 26.0417vw;
+    top: -13.5417vw;
     transform: rotate(-26deg);
+    z-index: 50;
 }
 
 #myProject {
@@ -186,7 +199,7 @@ body,
     padding: 20vh 0;
     background: url("../images/pin-board.jpg") repeat center;
     box-sizing: border-box;
-    border: 20px solid transparent;
+    border: 1.0417vw solid transparent;
     border-image: url("../images/wood-2045379_1280.jpg") 30;
 }
 
@@ -201,32 +214,33 @@ body,
     position: relative;
     background-image: url("../images/note-147951_640.png");
     background-size: cover;
-    width: 350px;
-    height: 350px;
+    width: 18.2292vw;
+    height: 18.2292vw;
     text-align: center;
 }
 
 .stikerMemo h4 {
-    font-size: 50px;
-    line-height: 175px;
+    font-size: 2.6042vw;
+    line-height: 9.1146vw;
 }
 
 .photoFrame {
     position: relative;
     background-image: url("../images/photoFrame01.png");
     background-size: cover;
-    width: 350px;
-    height: 400px;
+    width: 18.2292vw;
+    height: 20.8333vw;
     text-align: center;
+    transition: all 0.8s;
 }
 
 .photoFrame a {
     position: absolute;
     display: block;
-    top: 32px;
-    left: 40px;
-    width: 275px;
-    height: 280px;
+    top: 1.6667vw;
+    left: 2.0833vw;
+    width: 14.3229vw;
+    height: 14.5833vw;
     background-color: lavender;
     cursor: pointer;
     overflow: hidden;
@@ -239,7 +253,7 @@ body,
 
 .photoFrame h4 {
     position: absolute;
-    bottom: 20px;
+    bottom: 1.0417vw;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -247,11 +261,21 @@ body,
 .photoFrame:nth-child(odd) {
     background-image: url("../images/photoFrame02.png");
     right: 20vw;
+    transform: translateX(-100vw);
 }
 
 .photoFrame:nth-child(even) {
     background-image: url("../images/photoFrame03.png");
     left: 20vw;
+    transform: translateX(100vw);
+}
+
+.photoFrame:nth-child(odd).fade {
+    transform: translateX(0);
+}
+
+.photoFrame:nth-child(even).fade {
+    transform: translateX(0);
 }
 
 #footer {
@@ -260,13 +284,13 @@ body,
 }
 
 #email {
-    width: 800px;
-    height: 400px;
+    width: 41.6667vw;
+    height: 20.8333vw;
     background: #f7e4dd;
-    margin: 20vh auto;
+    margin: 50vh auto;
     text-align: center;
-    line-height: 400px;
-    font-size: 80px;
+    line-height: 20.8333vw;
+    font-size: 4.1667vw;
 }
 
 #header h1.fade {
@@ -280,8 +304,8 @@ body,
 
 .strokeBox {
     position: absolute;
-    width: 17px;
-    height: 5px;
+    width: 0.8854vw;
+    height: 0.2604vw;
     top: -200vh;
     left: 0;
 }
@@ -291,13 +315,14 @@ body,
     stroke: #d64141;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 4px;
+    stroke-width: 0.2083vw;
 }
 
 #dim,
 .md_cnt {
     position: fixed;
     z-index: 1000;
+    overflow: hidden;
 }
 
 #dim {
@@ -312,24 +337,24 @@ body,
 .md_cnt {
     visibility: hidden;
     background: rgb(224, 224, 224);
-    padding: 50px;
+    padding: 2.6042vw;
 }
 
-.md_cnt img{
+.md_cnt img {
     width: 80%;
     box-sizing: border-box;
 }
 
 #modal {
-    width: 650px;
+    width: 33.8542vw;
     height: 750px;
 }
 
 .md_cnt .mdclose_btn {
     position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 50px;
-    height: 50px;
+    right: 0.5208vw;
+    top: 0.5208vw;
+    width: 2.6042vw;
+    height: 2.6042vw;
     background: rgb(170, 170, 170);
 }
