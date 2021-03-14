@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+img {
+    border: 0px;
+}
+
+button {
+    border: 0px;
+}
+
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    width: 100%;
+    background-color: #292929;
+    font-family: arial;
+}
+
+#warp {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #292929;
+}
+
+header .header_warp {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+header .header_warp h1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url(../images/logo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+}
+
+header .header_warp nav {
+    width: 1000px;
+    height: 100px;
+    margin-left: 200px;
+}
+
+nav ul {
+    width: 1000px;
+    height: 100px;
+}
+
+nav ul li {
+    float: left;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #e6e6e6;
+    text-align: center;
+    line-height: 100px;
+}
+
+nav > ul > li:nth-child(1) a {
+    color: red;
+}
+
+nav > ul > li:hover > a{
+    color: red;
+}
+
+ul.sub_menu{
+    width: 100px;
+    height: 0;
+    position: absolute;
+    top: 100px;
+    background-color: black;
+    overflow: hidden;
+    transition: all 0.8s;
+}
+
+.sub_menu li{
+    width: 100px;
+    height: 50px;
+}
+
+.sub_menu li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #e6e6e6;
+    text-align: center;
+    line-height: 50px;
+}
+
+nav > ul:hover .sub_menu{
+    height: 200px;
+}
+
+.sub_menu li:hover > a{
+    color: red;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+.ok_btn {
+    width: 250px;
+    height: 80px;
+    font: 18px arial;
+    color: white;
+
+    background: none;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+
+.sec_box {
+    width: 100%;
+    height: 800px;
+}
+
+.main_slide {
+    background: url(../images/paintball-3623794_1920.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.main_slide .txtbox {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 300px;
+}
+
+.main_slide .txtbox h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.main_slide .txtbox h1:nth-child(2) {
+    color: red;
+}
+
+.main_slide .txtbox h4 {
+    font-size: 25px;
+    letter-spacing: -2px;
+    color: #cc3535;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main_slide .txtbox .slide_btn {
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: white;
+    background: none;
+}
+
+.main_slide .txtbox .prev_btn {
+    top: 50%;
+    left: 15%;
+}
+
+.main_slide .txtbox .next_btn {
+    top: 50%;
+    right: 15%;
+}
+
+.main_slide .txtbox .ok_btn {
+    background-color: #eb5353;
+    border-color: #eb5353;
+}
+
+.main_slide .phone_num {
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    background-color: #d33636;
+    z-index: 3;
+    top: 700px;
+    right: 0;
+    text-align: center;
+    color: #eaeaea;
+}
+
+.main_slide .phone_num .phone_icon {
+    width: 100px;
+    height: 100px;
+    background-color: #e88d8d;
+    float: left;
+    font-size: 80px;
+    line-height: 100px;
+}
+
+.main_slide .phone_num .p_number {
+    width: 230px;
+    height: 80px;
+    float: right;
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+.main_slide .phone_num .p_number p {
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.main_slide .phone_num .p_number p:nth-child(2) {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.main_box1 {
+    text-align: center;
+    color: white;
+}
+
+
+.main_box1 .main_box1_warp {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.main_box1 .main_box1_warp h1 {
+    font-size: 40px;
+}
+
+.main_box1 .main_box1_warp h1 strong {
+    color: red;
+}
+
+.main_box1 .main_box1_warp h4 {
+    width: 600px;
+    margin: 0 auto;
+    color: #bcbcbc;
+    margin-top: 20px;
+}
+
+.main_box1 .main_box1_warp .main_box1_slide {
+    width: 1200px;
+}
+
+.main_box1_slide ul {
+    width: 1200px;
+}
+
+.main_box1_slide ul li {
+    width: 300px;
+    height: 250px;
+    float: left;
+    position: relative;
+}
+
+.main_box1_slide ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+}
+
+.main_box1_slide ul li a .icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    /*    margin-top: 0;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_box1_slide ul li:nth-child(1) a .icon {
+    background-image: url(../images/play.png);
+}
+
+.main_box1_slide ul li:nth-child(2) a .icon {
+    background-image: url(../images/sunmul.png);
+}
+
+.main_box1_slide ul li:nth-child(3) a .icon {
+    background-image: url(../images/user.png);
+}
+
+.main_box1_slide ul li:nth-child(4) a .icon {
+    background-image: url(../images/star.png);
+}
+
+.main_box1_slide ul li:nth-child(1):hover a .icon {
+    background-image: url(../images/playHover.png);
+}
+
+.main_box1_slide ul li:nth-child(2):hover a .icon {
+    background-image: url(../images/sunmulHover.png);
+}
+
+.main_box1_slide ul li:nth-child(3):hover a .icon {
+    background-image: url(../images/userHover.png);
+}
+
+.main_box1_slide ul li:nth-child(4):hover a .icon {
+    background-image: url(../images/starHover.png);
+}
+
+.main_box1_slide ul li:hover a {
+    color: red;
+}
+
+.main_box1_slide ul li a p {
+    width: 150px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.main_box1 .ok_btn {
+    margin-top: 50px;
+}
+
+.main_box1 .ok_btn:hover {
+    color: red;
+    border-color: red;
+}
+
+.main_box2 {
+    width: 100%;
+}
+
+.main_box2_photo {
+    width: 50%;
+    height: 100%;
+    background: url(../images/paintball-1961038_1280.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: red;
+    background-blend-mode: multiply;
+    float: left;
+}
+
+.main_box2_txtbox {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-color: white;
+}
+
+.main_box2_txtbox_warp {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main_box2_txtbox_warp h1 {
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.main_box2_txtbox_warp h1 strong {
+    color: red;
+}
+
+.main_box2_txtbox_warp p {
+    width: 500px;
+    font-size: 20px;
+}
+
+.main_box2_txtbox_warp ul {
+    margin-top: 50px;
+}
+
+.main_box2_txtbox_warp ul li:before {
+    content: "■";
+    color: red;
+    float: left;
+    padding-right: 10px;
+}
+
+.main_box2_txtbox_warp ul li {
+    margin-bottom: 10px;
+}
+
+
+.main_box2_txtbox_warp .ok_btn {
+    color: red;
+    border-color: red;
+    margin-top: 50px;
+}
+
+.main_box2_txtbox_warp .ok_btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.main_box2_txtbox .blood_img{
+    position: absolute;
+    top: 1300px;
+    right: 0;
+    z-index: 10;
+} 
+
+.main_box3 {
+    width: 100%;
+    height: 600px;
+}
+
+.main_box3 .main_box3_warp {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    color: white;
+}
+
+.main_box3 .main_box3_warp .main_box3_txtbox {
+    width: 600px;
+    height: 400px;
+    float: left;
+}
+
+.main_box3 .main_box3_warp .main_box3_txtbox h1 {
+    font-size: 50px;
+}
+
+.main_box3 .main_box3_warp .main_box3_txtbox h1 strong {
+    color: red;
+}
+
+.main_box3 .main_box3_warp .main_box3_txtbox p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #cecece;
+}
+
+.main_box3 .main_box3_warp .main_box3_txtbox p strong {
+    font-size: 25px;
+    color: red;
+}
+
+.main_box3 .main_box3_warp .mail_box{
+    width: 550px;
+    height: 400px;
+    float: right;
+    color: #d9d9d9;
+    padding-left: 50px;
+}
+
+.main_box3 .main_box3_warp .mail_box h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.main_box3 .main_box3_warp .mail_box input{
+    background: none;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+     width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    color: white;
+}
+
+.main_box3 .main_box3_warp .mail_box .mail_vlaue{
+    width: 480px;
+    height: 180px;
+    background: none;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+}
+
+.main_box3 .main_box3_warp .mail_box button{
+    margin-top : 20px;
+}
+
+.main_box3 .main_box3_warp .mail_box button:hover{
+    color: red;
+    border-color : red;
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    padding-top: 50px;
+}

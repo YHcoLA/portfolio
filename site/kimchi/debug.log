@@ -1,0 +1,3 @@
+[1229/093833.336:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+[1230/095120.812:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+[1230/132302.926:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0
