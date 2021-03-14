@@ -41,11 +41,6 @@ body,
     padding: 0;
 }
 
-/* body{
-    background: url("../images/backgroundWoodPattern.jpg")no-repeat center;
-    background-size: cover;
-} */
-
 #header {
     position: relative;
     background: url("../images/dario-mazzone-presentazione-det-01.jpg")no-repeat center;
@@ -82,10 +77,6 @@ body,
     transition: all 0.8s;
     overflow: hidden;
 }
-
-/* #nav:hover {
-    top: 0;
-} */
 
 #nav ul {
     display: flex;
@@ -185,6 +176,7 @@ body,
 
 #myProject {
     width: 100%;
+    position: relative;
 }
 
 #myPWrap {
@@ -194,7 +186,6 @@ body,
     padding: 20vh 0;
     background: url("../images/pin-board.jpg") repeat center;
     box-sizing: border-box;
-    /* border: 10px solid #fff; */
     border: 20px solid transparent;
     border-image: url("../images/wood-2045379_1280.jpg") 30;
 }
@@ -237,6 +228,7 @@ body,
     width: 275px;
     height: 280px;
     background-color: lavender;
+    cursor: pointer;
     overflow: hidden;
 }
 
@@ -286,11 +278,12 @@ body,
     top: 0;
 }
 
-.strokeAnim{
+.strokeBox {
     position: absolute;
-    width: 5px;
+    width: 17px;
     height: 5px;
-    transform: rotate(90deg);
+    top: -200vh;
+    left: 0;
 }
 
 .stroke {
@@ -298,5 +291,45 @@ body,
     stroke: #d64141;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 7px;
+    stroke-width: 4px;
+}
+
+#dim,
+.md_cnt {
+    position: fixed;
+    z-index: 1000;
+}
+
+#dim {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.md_cnt {
+    visibility: hidden;
+    background: rgb(224, 224, 224);
+    padding: 50px;
+}
+
+.md_cnt img{
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#modal {
+    width: 650px;
+    height: 750px;
+}
+
+.md_cnt .mdclose_btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    background: rgb(170, 170, 170);
 }
